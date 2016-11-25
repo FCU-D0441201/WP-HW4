@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+$(document).ready(function()
+			{
+				$("button[target = 'p1']").click(function()
+							{
+								$("p:first").hide();
+							}
+						);
+
+
+			}
+		);
+
+$(document).ready(function()
+			{
+				$("button[target = 'p2']").click(function()
+							{
+								$("p#test").hide();
+
+							}
+						);
+			}
+		);
+
+$(document).ready(function()
+			{
+				$("button[target = 'p3']").click(function()
+							{
+								$("p.test").hide();
+							}
+						);
+			}
+		);
+
+</script>
+</head>
+
+<body>
+<h2>Web Prodramming</h2>
+<p>Hide paragraph1.</p>
+<p id="test">Hide paragraph2.</p>
+<p class="test">Hide paragraph3.</p>
+
+<button target = 'p1'>Hide p1</button>	<button target = 'p2'>Hide p2</button>	<button target = 'p3'>Hide p3</button>
+</body>
